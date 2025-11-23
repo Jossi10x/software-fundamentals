@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="reto_condicional_1"/>
+        <attribute name="authors" value="Berdu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-22 08:28:06 p.&#160;m."/>
+        <attribute name="created" value="QmVyZHU7REVTS1RPUC1SSFNUTTBWOzIwMjUtMTEtMjI7MDg6MDA6MTMgcC7CoG0uOzMyMDA="/>
+        <attribute name="edited" value="QmVyZHU7REVTS1RPUC1SSFNUTTBWOzIwMjUtMTEtMjI7MDg6Mjg6MDYgcC7CoG0uOzE7MzMyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dado1, dado2" type="Integer" array="False" size=""/>
+            <assign variable="dado1" expression="random(6)+1"/>
+            <assign variable="dado2" expression="random(6)+1"/>
+            <if expression="dado1 % 2 = 0">
+                <then>
+                    <output expression="&quot;El resultado del dado1 es par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El resultado del dado 1 es impar&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="dado2 % 2 = 0">
+                <then>
+                    <output expression="&quot;El resultado del dado 2 es par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El resultado del dado 2 es impar&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="dado1 = dado2">
+                <then>
+                    <output expression="&quot;Sacaste un par! You Win&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Game over&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
