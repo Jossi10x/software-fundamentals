@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="reto_condicional_3"/>
+        <attribute name="authors" value="Berdu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-22 09:44:43 p.&#160;m."/>
+        <attribute name="created" value="QmVyZHU7REVTS1RPUC1SSFNUTTBWOzIwMjUtMTEtMjI7MDk6MzE6MzcgcC7CoG0uOzMyMTE="/>
+        <attribute name="edited" value="QmVyZHU7REVTS1RPUC1SSFNUTTBWOzIwMjUtMTEtMjI7MDk6NDQ6NDMgcC7CoG0uOzE7MzMyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumUsuario" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un n&#250;mero entero (positivo o negativo): &quot;" newline="True"/>
+            <input variable="NumUsuario"/>
+            <if expression="NumUsuario &gt; 0">
+                <then>
+                    <if expression="NumUsuario % 2 = 0">
+                        <then>
+                            <output expression="&quot;El n&#250;mero entero es par positivo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El n&#250;mero entero es impar negativo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Abs(NumUsuario) % 2 = 0">
+                        <then>
+                            <output expression="&quot;El n&#250;mero entero es par negativo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El n&#250;mero entero es impar negativo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
