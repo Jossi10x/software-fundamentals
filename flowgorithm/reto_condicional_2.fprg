@@ -4,9 +4,9 @@
         <attribute name="name" value="reto_condicional_1"/>
         <attribute name="authors" value="Berdu"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-11-22 09:14:55 p.&#160;m."/>
+        <attribute name="saved" value="2025-11-22 09:45:20 p.&#160;m."/>
         <attribute name="created" value="QmVyZHU7REVTS1RPUC1SSFNUTTBWOzIwMjUtMTEtMjI7MDg6MDA6MTMgcC7CoG0uOzMyMDA="/>
-        <attribute name="edited" value="QmVyZHU7REVTS1RPUC1SSFNUTTBWOzIwMjUtMTEtMjI7MDk6MTQ6NTUgcC7CoG0uOzI7MzMyMQ=="/>
+        <attribute name="edited" value="QmVyZHU7REVTS1RPUC1SSFNUTTBWOzIwMjUtMTEtMjI7MDk6NDU6MjAgcC7CoG0uOzM7MzMxOA=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,7 +14,7 @@
             <declare name="NumUsuario" type="Real" array="False" size=""/>
             <output expression="&quot;Ingrese un n&#250;mero entero (positivo o negativo): &quot;" newline="True"/>
             <input variable="NumUsuario"/>
-            <if expression="NumUsuario % 2 = 0">
+            <if expression="Abs(NumUsuario) % 2 = 0">
                 <then>
                     <output expression="&quot;El n&#250;mero es par&quot;" newline="True"/>
                 </then>
