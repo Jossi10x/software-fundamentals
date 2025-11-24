@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="reto_programci&#243;n_1"/>
+        <attribute name="authors" value="Usuario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-20 02:50:42 p.&#160;m."/>
+        <attribute name="created" value="VXN1YXJpbztQQy03MDI5NTk7MjAyNS0xMS0yMDswMjozNDoyMSBwLsKgbS47Mjg0MQ=="/>
+        <attribute name="edited" value="VXN1YXJpbztQQy03MDI5NTk7MjAyNS0xMS0yMDswMjo1MDo0MiBwLsKgbS47MTsyOTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dado" type="Integer" array="False" size=""/>
+            <assign variable="dado" expression="random(6)+1"/>
+            <if expression="dado % 2 = 0">
+                <then>
+                    <output expression="&quot;El resultado del dado es &quot;&amp;dado" newline="True"/>
+                    <output expression="&quot;El n&#250;mero es par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El resultado del dado es &quot;&amp;dado" newline="True"/>
+                    <output expression="&quot;El n&#250;mero es impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
